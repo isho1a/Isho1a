@@ -4,24 +4,24 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>ISHO1A — EPK</title>
-  <meta name="description" content="ISHO1A — Manchester-based artist, producer & engineer. Music, highlights, and contact." />
+  <meta name="description" content="ISHO1A — Manchester-based artist, producer & engineer. Music, highlights, and bookings." />
 
-  <!-- Open Graph / Social preview -->
+  <!-- Social preview (update og:url + og:image if you ever change the repo name or image path) -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="ISHO1A — EPK" />
-  <meta property="og:description" content="Manchester-based artist/producer/engineer. Music, highlights, contact." />
-  <!-- Replace with a real URL once you add a press photo to /assets/press.jpg -->
-  <meta property="og:image" content="https://YOUR_GITHUB_PAGES_URL/assets/press.jpg" />
+  <meta property="og:description" content="Manchester-based artist/producer/engineer. Best track, highlights, and contact." />
+  <meta property="og:url" content="https://isho1a.github.io/isho1a/" />
+  <meta property="og:image" content="https://isho1a.github.io/isho1a/assets/press.jpeg" />
   <meta name="theme-color" content="#0b0b0f" />
 
   <style>
     :root{
       --bg:#0b0b0f;
-      --card:rgba(255,255,255,.05);
+      --card:rgba(255,255,255,.055);
       --card2:rgba(255,255,255,.035);
       --line:rgba(255,255,255,.10);
       --text:#f3f3f6;
-      --muted:rgba(243,243,246,.72);
+      --muted:rgba(243,243,246,.74);
       --accent:#7c3aed;
       --accent2:#22c55e;
       --radius:18px;
@@ -101,17 +101,8 @@
       width:100%;
       background: rgba(255,255,255,.02);
       border-bottom:1px solid rgba(255,255,255,.07);
-      display:flex; align-items:center; justify-content:center;
-      position:relative;
     }
     .photo img{width:100%; height:100%; object-fit:cover; display:block}
-    .photo .placeholder{
-      padding:14px 14px;
-      text-align:center;
-      color:var(--muted);
-      font-size:13px;
-      max-width: 32ch;
-    }
     .mini{padding:16px}
     .mini h3{margin:0 0 6px; font-size:16px}
     .mini p{margin:0; color:var(--muted); font-size:14px}
@@ -158,13 +149,13 @@
 
     <div class="topbar">
       <div class="badge"><span class="dot"></span> Available for support slots • UK</div>
-      <div class="badge">Contact: <a href="mailto:isholamusic@hotmail.com">isholamusic@hotmail.com</a></div>
+      <div class="badge">Bookings: <a href="mailto:isholamusic@hotmail.com">isholamusic@hotmail.com</a></div>
     </div>
 
     <div class="hero">
       <div class="card hero-left">
         <h1>ISHO1A</h1>
-        <p class="sub">Manchester-based <strong>artist / producer / engineer</strong>. EPK: music, highlights & booking contact.</p>
+        <p class="sub">Manchester-based <strong>artist / producer / engineer</strong>. EPK: best track, highlights & contact.</p>
 
         <div class="pillrow">
           <span class="pill">Manchester, UK</span>
@@ -186,17 +177,17 @@
         </div>
 
         <div class="hr"></div>
+
         <p class="small">
-          Tip: add a press photo at <span class="kbd">/assets/press.jpg</span> and update the OG image URL in the header for clean link previews.
+          Tip: this site is a GitHub project page (<span class="kbd">/isho1a/</span>). Asset paths use <span class="kbd">assets/...</span> so they always load correctly.
         </p>
       </div>
 
       <div class="card hero-right">
         <div class="photo">
-          <!-- Option A: once you add /assets/press.jpg, uncomment the img line below and delete the placeholder div -->
-         <img src="/assets/press.jpeg" alt="ISHO1A press photo">
+          <!-- NOTE: For project pages, use a relative path (no leading slash) -->
+          <img src="assets/press.jpeg" alt="ISHO1A press photo">
         </div>
-          
         <div class="mini">
           <h3>Key highlights</h3>
           <p>Performed at <strong>Blues Kitchen</strong>, <strong>Band on the Wall</strong>, and <strong>Barbican</strong> (2021).</p>
@@ -208,7 +199,11 @@
       <div class="card section">
         <h2>Bio</h2>
         <p>
-          ISHO1A is a Manchester-based artist, producer, and engineer. (Add a 3–5 line bio here that defines your sound, influences, and what you’re pushing this year.)
+          ISHO1A is a Manchester-based artist, producer and engineer blending sharp lyricism with polished, modern production.<br>
+          Known for emotionally direct writing and high-energy delivery, he builds records that hit hard and stay replayable.<br>
+          He’s performed at Blues Kitchen, Band on the Wall and the Barbican (2021).<br>
+          Whether on stage or in the studio, ISHO1A brings detail, discipline and intent to every release.<br>
+          For bookings, features or studio work: <a href="mailto:isholamusic@hotmail.com"><strong>isholamusic@hotmail.com</strong></a>.
         </p>
 
         <div class="links">
@@ -226,13 +221,16 @@
           <li>Barbican (2021)</li>
         </ul>
         <div class="hr"></div>
-        <p class="small">Add: support slots, festivals, radio plays, notable collabs, and any press quotes.</p>
+        <p class="small">
+          Want this to convert better? Add one strong YouTube performance/visual and 1–2 press quotes.
+        </p>
       </div>
     </div>
 
     <div class="two">
       <div class="card embed">
-        <!-- Replace VIDEO_ID with your YouTube video ID, e.g. https://www.youtube.com/watch?v=VIDEO_ID -->
+        <!-- Optional: Add a YouTube video.
+             Replace VIDEO_ID with your YouTube ID (the bit after watch?v=) -->
         <iframe class="frame"
           src="https://www.youtube.com/embed/VIDEO_ID"
           title="ISHO1A — Performance Video"
@@ -241,21 +239,28 @@
       </div>
 
       <div class="card section" style="background:var(--card2);">
-        <h2>What to add next (to make this hit)</h2>
-        <ul>
-          <li><strong>One performance video</strong> (best live clip or a clean visual).</li>
-          <li><strong>Two press photos</strong> (portrait + wide).</li>
-          <li><strong>One-line “sound” tag</strong> (e.g. “UK rap with …”).</li>
-          <li><strong>Links</strong>: YouTube, Apple Music, SoundCloud (optional), press kit PDF (optional).</li>
-        </ul>
+        <h2>Press / Downloads</h2>
+        <p class="small">
+          If you want, you can add a downloadable PDF EPK at <span class="kbd">assets/ISHO1A_EPK.pdf</span>
+          and link it here.
+        </p>
+        <div class="links" style="margin-top:12px">
+          <!-- Uncomment once you upload a PDF into assets/ -->
+          <!-- <a class="chip" href="assets/ISHO1A_EPK.pdf" target="_blank" rel="noopener">Download EPK (PDF)</a> -->
+          <a class="chip" href="mailto:isholamusic@hotmail.com">Bookings / Enquiries</a>
+          <a class="chip" href="https://www.instagram.com/isho1a/" target="_blank" rel="noopener">Instagram</a>
+        </div>
+
         <div class="hr"></div>
-        <p class="small">If you send your video link + a press photo link, I’ll wire them in properly and tighten your bio so it reads like a real EPK.</p>
+        <p class="small">
+          Your live link: <span class="kbd">https://isho1a.github.io/isho1a/</span>
+        </p>
       </div>
     </div>
 
     <div class="footer">
       <div>© <span id="y"></span> ISHO1A • Manchester, UK</div>
-      <div class="small">For bookings: <a href="mailto:isholamusic@hotmail.com">isholamusic@hotmail.com</a></div>
+      <div class="small">Bookings: <a href="mailto:isholamusic@hotmail.com">isholamusic@hotmail.com</a></div>
     </div>
 
   </div>
