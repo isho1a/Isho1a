@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ISHO1A — EPK</title>
+  <meta name="description" content="ISHO1A — Manchester-based artist, producer & engineer. Music, highlights, and contact." />
+
+  <!-- Open Graph / Social preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="ISHO1A — EPK" />
+  <meta property="og:description" content="Manchester-based artist/producer/engineer. Music, highlights, contact." />
+  <!-- Replace with a real URL once you add a press photo to /assets/press.jpg -->
+  <meta property="og:image" content="https://YOUR_GITHUB_PAGES_URL/assets/press.jpg" />
+  <meta name="theme-color" content="#0b0b0f" />
+
+  <style>
+    :root{
+      --bg:#0b0b0f;
+      --card:rgba(255,255,255,.05);
+      --card2:rgba(255,255,255,.035);
+      --line:rgba(255,255,255,.10);
+      --text:#f3f3f6;
+      --muted:rgba(243,243,246,.72);
+      --accent:#7c3aed;
+      --accent2:#22c55e;
+      --radius:18px;
+      --shadow: 0 18px 60px rgba(0,0,0,.45);
+      --max: 980px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      color:var(--text);
+      background:
+        radial-gradient(1200px 700px at 20% -10%, rgba(124,58,237,.35), transparent 60%),
+        radial-gradient(900px 500px at 100% 10%, rgba(34,197,94,.20), transparent 55%),
+        var(--bg);
+      line-height:1.45;
+    }
+    a{color:inherit; text-decoration:none}
+    .wrap{max-width:var(--max); margin:0 auto; padding:28px 18px 60px}
+    .topbar{display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap; margin-bottom:14px}
+    .badge{
+      display:inline-flex; align-items:center; gap:10px;
+      padding:9px 12px; border-radius:999px;
+      background:rgba(255,255,255,.03);
+      border:1px solid var(--line);
+      color:var(--muted);
+      font-size:13px;
+    }
+    .dot{width:9px; height:9px; border-radius:50%; background:var(--accent2); box-shadow:0 0 0 4px rgba(34,197,94,.16)}
+    .hero{
+      display:grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap:16px;
+      margin-top:10px;
+    }
+    @media (max-width: 860px){ .hero{grid-template-columns:1fr;} }
+
+    .card{
+      background:var(--card);
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      overflow:hidden;
+    }
+    .hero-left{padding:22px}
+    h1{margin:0 0 10px; font-size:46px; letter-spacing:-.02em}
+    @media (max-width: 520px){ h1{font-size:36px} }
+    .sub{margin:0 0 14px; color:var(--muted); font-size:16px; max-width:65ch}
+    .pillrow{display:flex; flex-wrap:wrap; gap:10px; margin:14px 0 18px}
+    .pill{
+      padding:9px 12px; border-radius:999px;
+      border:1px solid rgba(255,255,255,.10);
+      background:rgba(255,255,255,.03);
+      font-size:13px;
+      color:rgba(255,255,255,.90);
+    }
+    .cta{display:flex; flex-wrap:wrap; gap:10px; margin-top:10px}
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center; gap:10px;
+      padding:12px 14px; border-radius:14px;
+      font-weight:650;
+      border:1px solid rgba(255,255,255,.10);
+      background:rgba(255,255,255,.04);
+      transition:.16s ease;
+    }
+    .btn:hover{transform: translateY(-1px); background:rgba(255,255,255,.06)}
+    .btn.primary{
+      background: linear-gradient(135deg, rgba(124,58,237,.95), rgba(34,197,94,.75));
+      border:1px solid rgba(255,255,255,.12);
+    }
+    .btn.primary:hover{filter:brightness(1.06)}
+    .small{font-size:12px; color:var(--muted)}
+    .hero-right{display:grid; grid-template-rows:auto 1fr}
+    .photo{
+      aspect-ratio: 4/5;
+      width:100%;
+      background: rgba(255,255,255,.02);
+      border-bottom:1px solid rgba(255,255,255,.07);
+      display:flex; align-items:center; justify-content:center;
+      position:relative;
+    }
+    .photo img{width:100%; height:100%; object-fit:cover; display:block}
+    .photo .placeholder{
+      padding:14px 14px;
+      text-align:center;
+      color:var(--muted);
+      font-size:13px;
+      max-width: 32ch;
+    }
+    .mini{padding:16px}
+    .mini h3{margin:0 0 6px; font-size:16px}
+    .mini p{margin:0; color:var(--muted); font-size:14px}
+
+    .grid{display:grid; grid-template-columns: 1fr 1fr; gap:16px; margin-top:16px}
+    @media (max-width: 860px){ .grid{grid-template-columns:1fr} }
+    .section{padding:18px}
+    .section h2{margin:0 0 10px; font-size:18px; letter-spacing:-.01em}
+    .section p{margin:0; color:var(--muted)}
+    .links{display:flex; flex-wrap:wrap; gap:10px; margin-top:12px}
+    .chip{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:10px 12px; border-radius:999px;
+      border:1px solid rgba(255,255,255,.10);
+      background:rgba(255,255,255,.03);
+      font-size:13px; color:rgba(255,255,255,.92);
+    }
+
+    .embed{padding:0; overflow:hidden; background:rgba(0,0,0,.35)}
+    .embed .frame{width:100%; aspect-ratio:16/9; border:0; display:block; background:#000}
+
+    .two{display:grid; grid-template-columns: 1fr 1fr; gap:16px; margin-top:16px}
+    @media (max-width: 860px){ .two{grid-template-columns:1fr} }
+    ul{margin:10px 0 0; padding-left:18px; color:var(--muted)}
+    .hr{height:1px; background:rgba(255,255,255,.08); margin:14px 0}
+    .footer{
+      margin-top:26px;
+      padding:18px;
+      text-align:center;
+      color:var(--muted);
+      border-top:1px solid rgba(255,255,255,.08);
+    }
+    .kbd{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono","Courier New", monospace;
+      font-size:12px; padding:2px 6px; border-radius:8px;
+      border:1px solid rgba(255,255,255,.10); background:rgba(255,255,255,.04);
+      color:rgba(255,255,255,.86);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <div class="topbar">
+      <div class="badge"><span class="dot"></span> Available for support slots • UK</div>
+      <div class="badge">Contact: <a href="mailto:isholamusic@hotmail.com">isholamusic@hotmail.com</a></div>
+    </div>
+
+    <div class="hero">
+      <div class="card hero-left">
+        <h1>ISHO1A</h1>
+        <p class="sub">Manchester-based <strong>artist / producer / engineer</strong>. EPK: music, highlights & booking contact.</p>
+
+        <div class="pillrow">
+          <span class="pill">Manchester, UK</span>
+          <span class="pill">Artist</span>
+          <span class="pill">Producer</span>
+          <span class="pill">Engineer</span>
+        </div>
+
+        <div class="cta">
+          <a class="btn primary" href="https://open.spotify.com/track/6lrZUElLk71ptuX9ZHegyx?si=9e3f88d1eb2f48f9" target="_blank" rel="noopener">
+            ▶ Listen: Best Track (Spotify)
+          </a>
+          <a class="btn" href="https://www.instagram.com/isho1a/" target="_blank" rel="noopener">
+            Instagram
+          </a>
+          <a class="btn" href="mailto:isholamusic@hotmail.com">
+            Email / Bookings
+          </a>
+        </div>
+
+        <div class="hr"></div>
+        <p class="small">
+          Tip: add a press photo at <span class="kbd">/assets/press.jpg</span> and update the OG image URL in the header for clean link previews.
+        </p>
+      </div>
+
+      <div class="card hero-right">
+        <div class="photo">
+          <!-- Option A: once you add /assets/press.jpg, uncomment the img line below and delete the placeholder div -->
+          <!-- <img src="./assets/press.jpg" alt="ISHO1A press photo"> -->
+
+          <div class="placeholder">
+            Press photo placeholder.<br><br>
+            Add <span class="kbd">assets/press.jpg</span> to your repo, then uncomment the image line in the code.
+          </div>
+        </div>
+        <div class="mini">
+          <h3>Key highlights</h3>
+          <p>Performed at <strong>Blues Kitchen</strong>, <strong>Band on the Wall</strong>, and <strong>Barbican</strong> (2021).</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="card section">
+        <h2>Bio</h2>
+        <p>
+          ISHO1A is a Manchester-based artist, producer, and engineer. (Add a 3–5 line bio here that defines your sound, influences, and what you’re pushing this year.)
+        </p>
+
+        <div class="links">
+          <a class="chip" href="https://open.spotify.com/track/6lrZUElLk71ptuX9ZHegyx?si=9e3f88d1eb2f48f9" target="_blank" rel="noopener">Spotify</a>
+          <a class="chip" href="https://www.instagram.com/isho1a/" target="_blank" rel="noopener">Instagram</a>
+          <a class="chip" href="mailto:isholamusic@hotmail.com">Email</a>
+        </div>
+      </div>
+
+      <div class="card section">
+        <h2>Performance</h2>
+        <ul>
+          <li>Blues Kitchen</li>
+          <li>Band on the Wall</li>
+          <li>Barbican (2021)</li>
+        </ul>
+        <div class="hr"></div>
+        <p class="small">Add: support slots, festivals, radio plays, notable collabs, and any press quotes.</p>
+      </div>
+    </div>
+
+    <div class="two">
+      <div class="card embed">
+        <!-- Replace VIDEO_ID with your YouTube video ID, e.g. https://www.youtube.com/watch?v=VIDEO_ID -->
+        <iframe class="frame"
+          src="https://www.youtube.com/embed/VIDEO_ID"
+          title="ISHO1A — Performance Video"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+
+      <div class="card section" style="background:var(--card2);">
+        <h2>What to add next (to make this hit)</h2>
+        <ul>
+          <li><strong>One performance video</strong> (best live clip or a clean visual).</li>
+          <li><strong>Two press photos</strong> (portrait + wide).</li>
+          <li><strong>One-line “sound” tag</strong> (e.g. “UK rap with …”).</li>
+          <li><strong>Links</strong>: YouTube, Apple Music, SoundCloud (optional), press kit PDF (optional).</li>
+        </ul>
+        <div class="hr"></div>
+        <p class="small">If you send your video link + a press photo link, I’ll wire them in properly and tighten your bio so it reads like a real EPK.</p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div>© <span id="y"></span> ISHO1A • Manchester, UK</div>
+      <div class="small">For bookings: <a href="mailto:isholamusic@hotmail.com">isholamusic@hotmail.com</a></div>
+    </div>
+
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
