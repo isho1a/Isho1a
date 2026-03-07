@@ -113,8 +113,7 @@
     .mini h3{margin:0 0 6px; font-size:16px}
     .mini p{margin:0; color:var(--muted); font-size:14px}
 
-    .grid{display:grid; grid-template-columns: 1fr 1fr; gap:16px; margin-top:16px}
-    @media (max-width: 860px){ .grid{grid-template-columns:1fr} }
+    .grid{display:grid; grid-template-columns: 1fr; gap:16px; margin-top:16px}
     .section{padding:18px}
     .section h2{margin:0 0 10px; font-size:18px; letter-spacing:-.01em}
     .section p{margin:0; color:var(--muted)}
@@ -127,13 +126,9 @@
       font-size:13px; color:rgba(255,255,255,.92);
     }
 
-    .two{display:grid; grid-template-columns: 1.2fr .8fr; gap:16px; margin-top:16px}
-    @media (max-width: 860px){ .two{grid-template-columns:1fr} }
-
-    .embed{padding:0; overflow:hidden; background:rgba(0,0,0,.35)}
+    .embed{padding:0; overflow:hidden; background:rgba(0,0,0,.35); margin-top:16px}
     .embed .frame{width:100%; aspect-ratio:16/9; border:0; display:block; background:#000}
 
-    ul{margin:10px 0 0; padding-left:18px; color:var(--muted)}
     .hr{height:1px; background:rgba(255,255,255,.08); margin:14px 0}
 
     .footer{
@@ -224,48 +219,14 @@
           <a class="chip" href="mailto:isholamusic@hotmail.com">Email</a>
         </div>
       </div>
-
-      <div class="card section">
-        <h2>Performance</h2>
-        <ul>
-          <li>Blues Kitchen</li>
-          <li>Band on the Wall</li>
-          <li>Barbican</li>
-        </ul>
-        <div class="hr"></div>
-        <p class="small">
-          To level this EPK up even more: add 1–2 press quotes, a short “sounds like” line, and a second strong photo.
-        </p>
-      </div>
     </div>
 
-    <div class="two" id="video">
-      <div class="card embed">
-        <iframe class="frame"
-          src="https://www.youtube.com/embed/0cN_qdx8GPo"
-          title="ISHO1A — Video"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
-      </div>
-
-      <div class="card section" style="background:var(--card2);">
-        <h2>Press / Downloads</h2>
-        <p class="small">
-          Optional: upload a PDF EPK into <span class="kbd">assets/ISHO1A_EPK.pdf</span> and enable a download button below.
-        </p>
-
-        <div class="links" style="margin-top:12px">
-          <!-- Uncomment once you upload a PDF into assets/ -->
-          <!-- <a class="chip" href="assets/ISHO1A_EPK.pdf" target="_blank" rel="noopener">Download EPK (PDF)</a> -->
-          <a class="chip" href="mailto:isholamusic@hotmail.com">Bookings / Enquiries</a>
-          <a class="chip" href="https://www.instagram.com/isho1a/" target="_blank" rel="noopener">Instagram</a>
-        </div>
-
-        <div class="hr"></div>
-        <p class="small">
-          Tip: keep videos on YouTube/Vimeo for fast loading. Keep GitHub Pages for the clean EPK hub.
-        </p>
-      </div>
+    <div class="card embed" id="video">
+      <iframe class="frame"
+        src="https://www.youtube.com/embed/0cN_qdx8GPo"
+        title="ISHO1A — Video"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
     </div>
 
     <div class="footer">
