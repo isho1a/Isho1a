@@ -4,12 +4,12 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>ISHO1A — EPK</title>
-  <meta name="description" content="ISHO1A — Manchester-based artist, producer & engineer. Music, highlights, and bookings." />
+  <meta name="description" content="ISHO1A — Manchester-based artist, producer & engineer. Music, video, highlights, and bookings." />
 
-  <!-- Social preview (update og:url + og:image if you ever change the repo name or image path) -->
+  <!-- Social preview -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="ISHO1A — EPK" />
-  <meta property="og:description" content="Manchester-based artist/producer/engineer. Best track, highlights, and contact." />
+  <meta property="og:description" content="Manchester-based artist/producer/engineer. Watch the video, listen to the best track, and book." />
   <meta property="og:url" content="https://isho1a.github.io/isho1a/" />
   <meta property="og:image" content="https://isho1a.github.io/isho1a/assets/press.jpeg" />
   <meta name="theme-color" content="#0b0b0f" />
@@ -52,6 +52,7 @@
       font-size:13px;
     }
     .dot{width:9px; height:9px; border-radius:50%; background:var(--accent2); box-shadow:0 0 0 4px rgba(34,197,94,.16)}
+
     .hero{
       display:grid;
       grid-template-columns: 1.2fr .8fr;
@@ -67,10 +68,12 @@
       box-shadow:var(--shadow);
       overflow:hidden;
     }
+
     .hero-left{padding:22px}
     h1{margin:0 0 10px; font-size:46px; letter-spacing:-.02em}
     @media (max-width: 520px){ h1{font-size:36px} }
     .sub{margin:0 0 14px; color:var(--muted); font-size:16px; max-width:65ch}
+
     .pillrow{display:flex; flex-wrap:wrap; gap:10px; margin:14px 0 18px}
     .pill{
       padding:9px 12px; border-radius:999px;
@@ -79,6 +82,7 @@
       font-size:13px;
       color:rgba(255,255,255,.90);
     }
+
     .cta{display:flex; flex-wrap:wrap; gap:10px; margin-top:10px}
     .btn{
       display:inline-flex; align-items:center; justify-content:center; gap:10px;
@@ -94,7 +98,9 @@
       border:1px solid rgba(255,255,255,.12);
     }
     .btn.primary:hover{filter:brightness(1.06)}
+    .btn.ghost{background:rgba(255,255,255,.03)}
     .small{font-size:12px; color:var(--muted)}
+
     .hero-right{display:grid; grid-template-rows:auto 1fr}
     .photo{
       aspect-ratio: 4/5;
@@ -121,13 +127,15 @@
       font-size:13px; color:rgba(255,255,255,.92);
     }
 
+    .two{display:grid; grid-template-columns: 1.2fr .8fr; gap:16px; margin-top:16px}
+    @media (max-width: 860px){ .two{grid-template-columns:1fr} }
+
     .embed{padding:0; overflow:hidden; background:rgba(0,0,0,.35)}
     .embed .frame{width:100%; aspect-ratio:16/9; border:0; display:block; background:#000}
 
-    .two{display:grid; grid-template-columns: 1fr 1fr; gap:16px; margin-top:16px}
-    @media (max-width: 860px){ .two{grid-template-columns:1fr} }
     ul{margin:10px 0 0; padding-left:18px; color:var(--muted)}
     .hr{height:1px; background:rgba(255,255,255,.08); margin:14px 0}
+
     .footer{
       margin-top:26px;
       padding:18px;
@@ -135,6 +143,7 @@
       color:var(--muted);
       border-top:1px solid rgba(255,255,255,.08);
     }
+
     .kbd{
       font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono","Courier New", monospace;
       font-size:12px; padding:2px 6px; border-radius:8px;
@@ -155,7 +164,7 @@
     <div class="hero">
       <div class="card hero-left">
         <h1>ISHO1A</h1>
-        <p class="sub">Manchester-based <strong>artist / producer / engineer</strong>. EPK: best track, highlights & contact.</p>
+        <p class="sub">Manchester-based <strong>artist / producer / engineer</strong>. EPK: best track, video, highlights & contact.</p>
 
         <div class="pillrow">
           <span class="pill">Manchester, UK</span>
@@ -168,10 +177,13 @@
           <a class="btn primary" href="https://open.spotify.com/track/6lrZUElLk71ptuX9ZHegyx?si=9e3f88d1eb2f48f9" target="_blank" rel="noopener">
             ▶ Listen: Best Track (Spotify)
           </a>
-          <a class="btn" href="https://www.instagram.com/isho1a/" target="_blank" rel="noopener">
+          <a class="btn" href="#video">
+            ▶ Watch Video
+          </a>
+          <a class="btn ghost" href="https://www.instagram.com/isho1a/" target="_blank" rel="noopener">
             Instagram
           </a>
-          <a class="btn" href="mailto:isholamusic@hotmail.com">
+          <a class="btn ghost" href="mailto:isholamusic@hotmail.com">
             Email / Bookings
           </a>
         </div>
@@ -179,18 +191,17 @@
         <div class="hr"></div>
 
         <p class="small">
-          Tip: this site is a GitHub project page (<span class="kbd">/isho1a/</span>). Asset paths use <span class="kbd">assets/...</span> so they always load correctly.
+          Live link: <span class="kbd">https://isho1a.github.io/isho1a/</span> • Press photo: <span class="kbd">assets/press.jpeg</span>
         </p>
       </div>
 
       <div class="card hero-right">
         <div class="photo">
-          <!-- NOTE: For project pages, use a relative path (no leading slash) -->
           <img src="assets/press.jpeg" alt="ISHO1A press photo">
         </div>
         <div class="mini">
           <h3>Key highlights</h3>
-          <p>Performed at <strong>Blues Kitchen</strong>, <strong>Band on the Wall</strong>, and <strong>Barbican</strong> (2021).</p>
+          <p>Performed at <strong>Blues Kitchen</strong>, <strong>Band on the Wall</strong>, and <strong>Barbican</strong>.</p>
         </div>
       </div>
     </div>
@@ -201,13 +212,14 @@
         <p>
           ISHO1A is a Manchester-based artist, producer and engineer blending sharp lyricism with polished, modern production.<br>
           Known for emotionally direct writing and high-energy delivery, he builds records that hit hard and stay replayable.<br>
-          He’s performed at Blues Kitchen, Band on the Wall and the Barbican (2021).<br>
+          He’s performed at Blues Kitchen, Band on the Wall and the Barbican.<br>
           Whether on stage or in the studio, ISHO1A brings detail, discipline and intent to every release.<br>
           For bookings, features or studio work: <a href="mailto:isholamusic@hotmail.com"><strong>isholamusic@hotmail.com</strong></a>.
         </p>
 
         <div class="links">
           <a class="chip" href="https://open.spotify.com/track/6lrZUElLk71ptuX9ZHegyx?si=9e3f88d1eb2f48f9" target="_blank" rel="noopener">Spotify</a>
+          <a class="chip" href="https://www.youtube.com/watch?v=0cN_qdx8GPo" target="_blank" rel="noopener">YouTube</a>
           <a class="chip" href="https://www.instagram.com/isho1a/" target="_blank" rel="noopener">Instagram</a>
           <a class="chip" href="mailto:isholamusic@hotmail.com">Email</a>
         </div>
@@ -218,22 +230,20 @@
         <ul>
           <li>Blues Kitchen</li>
           <li>Band on the Wall</li>
-          <li>Barbican (2021)</li>
+          <li>Barbican</li>
         </ul>
         <div class="hr"></div>
         <p class="small">
-          Want this to convert better? Add one strong YouTube performance/visual and 1–2 press quotes.
+          To level this EPK up even more: add 1–2 press quotes, a short “sounds like” line, and a second strong photo.
         </p>
       </div>
     </div>
 
-    <div class="two">
+    <div class="two" id="video">
       <div class="card embed">
-        <!-- Optional: Add a YouTube video.
-             Replace VIDEO_ID with your YouTube ID (the bit after watch?v=) -->
         <iframe class="frame"
-          src="https://www.youtube.com/embed/VIDEO_ID"
-          title="ISHO1A — Performance Video"
+          src="https://www.youtube.com/embed/0cN_qdx8GPo"
+          title="ISHO1A — Video"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen></iframe>
       </div>
@@ -241,9 +251,9 @@
       <div class="card section" style="background:var(--card2);">
         <h2>Press / Downloads</h2>
         <p class="small">
-          If you want, you can add a downloadable PDF EPK at <span class="kbd">assets/ISHO1A_EPK.pdf</span>
-          and link it here.
+          Optional: upload a PDF EPK into <span class="kbd">assets/ISHO1A_EPK.pdf</span> and enable a download button below.
         </p>
+
         <div class="links" style="margin-top:12px">
           <!-- Uncomment once you upload a PDF into assets/ -->
           <!-- <a class="chip" href="assets/ISHO1A_EPK.pdf" target="_blank" rel="noopener">Download EPK (PDF)</a> -->
@@ -253,7 +263,7 @@
 
         <div class="hr"></div>
         <p class="small">
-          Your live link: <span class="kbd">https://isho1a.github.io/isho1a/</span>
+          Tip: keep videos on YouTube/Vimeo for fast loading. Keep GitHub Pages for the clean EPK hub.
         </p>
       </div>
     </div>
