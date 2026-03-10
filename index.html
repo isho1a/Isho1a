@@ -99,7 +99,16 @@
     }
     .btn.primary:hover{filter:brightness(1.06)}
     .btn.ghost{background:rgba(255,255,255,.03)}
-    .small{font-size:12px; color:var(--muted)}
+
+    .hr{height:1px; background:rgba(255,255,255,.08); margin:14px 0}
+
+    .underbio{
+      margin:0;
+      color:var(--muted);
+      font-size:13.5px;
+      line-height:1.55;
+      max-width: 75ch;
+    }
 
     .hero-right{display:grid; grid-template-rows:auto 1fr}
     .photo{
@@ -129,21 +138,12 @@
     .embed{padding:0; overflow:hidden; background:rgba(0,0,0,.35); margin-top:16px}
     .embed .frame{width:100%; aspect-ratio:16/9; border:0; display:block; background:#000}
 
-    .hr{height:1px; background:rgba(255,255,255,.08); margin:14px 0}
-
     .footer{
       margin-top:26px;
       padding:18px;
       text-align:center;
       color:var(--muted);
       border-top:1px solid rgba(255,255,255,.08);
-    }
-
-    .kbd{
-      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono","Courier New", monospace;
-      font-size:12px; padding:2px 6px; border-radius:8px;
-      border:1px solid rgba(255,255,255,.10); background:rgba(255,255,255,.04);
-      color:rgba(255,255,255,.86);
     }
   </style>
 </head>
@@ -183,10 +183,14 @@
           </a>
         </div>
 
+        <!-- Replaced the old "Live link / press photo" box with your bio -->
         <div class="hr"></div>
-
-        <p class="small">
-          Live link: <span class="kbd">https://isho1a.github.io/isho1a/</span> • Press photo: <span class="kbd">assets/press.jpeg</span>
+        <p class="underbio">
+          ISHO1A is a Manchester-based artist, producer and engineer blending sharp lyricism with polished, modern production.
+          Known for emotionally direct writing and high-energy delivery, he builds records that hit hard and stay replayable.
+          He’s performed at Blues Kitchen, Band on the Wall and the Barbican.
+          Whether on stage or in the studio, ISHO1A brings detail, discipline and intent to every release.
+          For bookings, features or studio work: <a href="mailto:isholamusic@hotmail.com"><strong>isholamusic@hotmail.com</strong></a>.
         </p>
       </div>
 
@@ -201,26 +205,6 @@
       </div>
     </div>
 
-    <div class="grid">
-      <div class="card section">
-        <h2>Bio</h2>
-        <p>
-          ISHO1A is a Manchester-based artist, producer and engineer blending sharp lyricism with polished, modern production.<br>
-          Known for emotionally direct writing and high-energy delivery, he builds records that hit hard and stay replayable.<br>
-          He’s performed at Blues Kitchen, Band on the Wall and the Barbican.<br>
-          Whether on stage or in the studio, ISHO1A brings detail, discipline and intent to every release.<br>
-          For bookings, features or studio work: <a href="mailto:isholamusic@hotmail.com"><strong>isholamusic@hotmail.com</strong></a>.
-        </p>
-
-        <div class="links">
-          <a class="chip" href="https://open.spotify.com/track/6lrZUElLk71ptuX9ZHegyx?si=9e3f88d1eb2f48f9" target="_blank" rel="noopener">Spotify</a>
-          <a class="chip" href="https://www.youtube.com/watch?v=0cN_qdx8GPo" target="_blank" rel="noopener">YouTube</a>
-          <a class="chip" href="https://www.instagram.com/isho1a/" target="_blank" rel="noopener">Instagram</a>
-          <a class="chip" href="mailto:isholamusic@hotmail.com">Email</a>
-        </div>
-      </div>
-    </div>
-
     <div class="card embed" id="video">
       <iframe class="frame"
         src="https://www.youtube.com/embed/0cN_qdx8GPo"
@@ -231,7 +215,7 @@
 
     <div class="footer">
       <div>© <span id="y"></span> ISHO1A • Manchester, UK</div>
-      <div class="small">Bookings: <a href="mailto:isholamusic@hotmail.com">isholamusic@hotmail.com</a></div>
+      <div>Bookings: <a href="mailto:isholamusic@hotmail.com">isholamusic@hotmail.com</a></div>
     </div>
 
   </div>
