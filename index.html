@@ -4,12 +4,12 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>ISHO1A — EPK</title>
-  <meta name="description" content="ISHO1A — Manchester-based artist, producer & engineer. Music, video, highlights, and bookings." />
+  <meta name="description" content="ISHO1A — Manchester-based artist, producer & engineer. Music, videos, highlights, and bookings." />
 
   <!-- Social preview -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="ISHO1A — EPK" />
-  <meta property="og:description" content="Manchester-based artist/producer/engineer. Watch the video, listen to the best track, and book." />
+  <meta property="og:description" content="Manchester-based artist/producer/engineer. Watch the videos, listen to the best track, and book." />
   <meta property="og:url" content="https://isho1a.github.io/isho1a/" />
   <meta property="og:image" content="https://isho1a.github.io/isho1a/assets/press2.JPEG" />
   <meta name="theme-color" content="#0b0b0f" />
@@ -125,6 +125,14 @@
     .embed{padding:0; overflow:hidden; background:rgba(0,0,0,.35); margin-top:16px}
     .embed .frame{width:100%; aspect-ratio:16/9; border:0; display:block; background:#000}
 
+    .section-title{
+      margin:14px 0 6px;
+      color:rgba(255,255,255,.92);
+      font-size:14px;
+      letter-spacing:.02em;
+      font-weight:700;
+    }
+
     .footer{
       margin-top:26px;
       padding:18px;
@@ -146,7 +154,7 @@
     <div class="hero">
       <div class="card hero-left">
         <h1>ISHO1A</h1>
-        <p class="sub">Manchester-based <strong>artist / producer / engineer</strong>. EPK: best track, video, highlights & contact.</p>
+        <p class="sub">Manchester-based <strong>artist / producer / engineer</strong>. EPK: best track, videos, highlights & contact.</p>
 
         <div class="pillrow">
           <span class="pill">Manchester, UK</span>
@@ -159,9 +167,8 @@
           <a class="btn primary" href="https://open.spotify.com/track/6lrZUElLk71ptuX9ZHegyx?si=9e3f88d1eb2f48f9" target="_blank" rel="noopener">
             ▶ Listen: Best Track (Spotify)
           </a>
-          <a class="btn" href="#video">
-            ▶ Watch Video
-          </a>
+          <a class="btn" href="#video1">▶ Watch Video 1</a>
+          <a class="btn" href="#video2">▶ Watch Video 2</a>
           <a class="btn ghost" href="https://www.instagram.com/isho1a/" target="_blank" rel="noopener">
             Instagram
           </a>
@@ -191,10 +198,20 @@
       </div>
     </div>
 
-    <div class="card embed" id="video">
+    <div class="section-title" id="video1">VIDEO 1</div>
+    <div class="card embed">
       <iframe class="frame"
         src="https://www.youtube.com/embed/0cN_qdx8GPo"
-        title="ISHO1A — Video"
+        title="ISHO1A — Video 1"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    </div>
+
+    <div class="section-title" id="video2">VIDEO 2</div>
+    <div class="card embed">
+      <iframe class="frame"
+        src="https://www.youtube.com/embed/N2-sL12dCNc"
+        title="ISHO1A — Video 2"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen></iframe>
     </div>
